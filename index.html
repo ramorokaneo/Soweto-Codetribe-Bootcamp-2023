@@ -1,99 +1,399 @@
 <!DOCTYPE html>
-<html>
-    <title>My Profile</title>
-
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="./styles.css"
-    </head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="styles.css">
 
-    <body>
-        <!--This is the @head and it will encopass my logo and my navigation bar-->
-        <head>
-            <div>
-                <table style="width: 100%">
-                <tr>
-                    <td>
-                        <a href="index.html">
-                            <img src="visuals/Neo-Logo.svg.png" width="100px" alt="" />
-                        </a>
-                    </td>
-                    <td align="right">
-                        <nav
-                            style="
-                                margin-right: 50px;
-                                margin-top: 16px;
-                                margin-bottom: 16px;
-                                margin-left: 50px;
-                            "
-                        >
-                            <a href="index.html">Home</a>
-                            <a href="about_me.html"style="margin: 16px">About Me</a>
-                            <a href="contact_me.html">Contact Me</a>
-                        </nav>
-                    </td>
-                </tr>
-            </table>
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Serif:ital@0;1&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+     </head>
+     <body>
+        <!--------header---->
+        <header>
+            <a href="#" class="logo"><img src="visuals/Neo-Logo.svg.png" height="100px", width="150px"></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+            <ul class="navlist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#my resume">My Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="top-btn">Download My CV</a>
+        </header>
+
+        <!--------home---->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h3>Hello, I am</h3>
+                <h1>Neo Ramoroka</h1>
+                <h5>A Codetribe 2023 Bootcamp Web Design and Development Student <span> from Soweto Campus </span></h5>
+                <p>I am very passionate <br> and dedicated to my work.</p>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                </div>
+                <a href="#" class="btn">Hire Me</a>
             </div>
-        </head>
 
-    <!---This is my main and it will encompass all my contant for the landing page for my site--->
-    <main>
-        <table style="width: 50px; height: 50px;">
-            <tr>
-                <td colspan="2">
-                    <iframe width="1500" height="700"
-                    src="visuals/pexels-cottonbro-10678930.mp4?">
-                </iframe>
-                    <h1> Hello, My name is <b>Neo Ramoroka</b>.</h1>
-                    <h2>I am a Web Design and Developer, how can I assist you today?</h2>
-                </td>
-            </tr>
+            <div class="home-img">
+                <img src="visuals/IMG_8315.JPG" height="300vh", width="250vh">
+            </div>
+        </section>
 
-            <td style="padding-left: 50vh; padding-top: 10px;">
+        <!--------About---->
+        <style>
+            body {
+                background-image: url(visuals/pexels-miodrag-kitanović-4287012.jpg);
+            }
+        </style>
+        <section class="about" id="about">
+            <div class="about-">
+                            <video width="400" height="350" controls>
+                    <source src="visuals/production ID_4065630.mp4" type="video/mp4">
+                </video>
+            </div>
 
-                <h1>My Bio</h1>
-
-                <p style="width: fit-content;">
-                    I create websites that help organizations address business challenges 
-                     and meet their needs. I manage everything from website navigation
-                     and layout to a company's web hosting and security architecture.<br /> 
+            <div class="about-text">
+                <h1> More About Me</h1>
+                <h3>I am a Student</h3>
+                <h2>I Can Design Anything You Want</h2>
+                <p> I am currently part of the Mlab Codetribe 2023 Bootcamp, learning and gaining skills in web designing and development. I am very passionate and dedicated about my work
+                    I have former experience in different sector which play a huge role in helping being better as a professional software developer. Over the years I have aquired skills 
+                    and knowlege necessary to make every project I am hired for a success. I enjoy every step of the design process.</p>
                 </p>
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+        </section>
 
-            </td>
-            <td align="right" style="padding-right: 70vh; padding-top: 10px; padding-bottom: 30px;">
-                <img 
-                    src="visuals/IMG_8315.JPG" 
-                alt="" 
-                width="200px" 
-                height="200px"
-                style="border-radius: 50%; object-fit: cover; border: 5px solid lightgrey"
-                />
-            </td>
-        </tr>
-        </table>
-    </main>
+        <!---------My Resume---->
+        <section class="my resume" id="my resume">
+            <ul id="AboutMeID">
+                <li><b>My Work Experience</b>
+                    <table>
+                        <tr>
+                            <th>Job Title</th>
+                            <th>Company</th>
+                            <th>Responsibilities</th>
+                            <th>Duration or Dates</th>
+                        </tr>
+                        <tr>
+                            <td>Data Capturer</td>
+                            <td>Department of Statistics South Africa, Johannesburg</td>
+                            <td>Going door-to-door to collect information from households
+                                Capturing information, sorting, coding and quality of information
+                                captured on the system, general administrative and non-administrative
+                                duties, merged data with existing data sets, careful to keep old data sets
+                                and documentation, collected and recorded data pertinent to project goals
+                                and ultimate productivity.
+                            </td>
+                            <td>February 2022 - April 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Skills Development Practitioner</td>
+                            <td>Department of Education, Johannesburg</td>
+                            <td>Taught ABET Level 1-4 classes per week in basic learning areas which are
+                                Communication in English and mathematical Literacy, documented class
+                                activities including attendance register, lesson plans and provided
+                                feedback to management by submitting weekly and monthly reports,
+                                administered assessments before, during and after the course, supported
+                                individuals and students with academic issues liaising between
+                                participants, employees, families, and program executives about the
+                                needs of the program, gather data about course success participant
+                                experience to help with future course planning, maintained organized
+                                files and documentation of each student's progress, provided optimal
+                                instruction and academic support to students, planned group work to
+                                encourage team-building skills, promoted individualism as well as class
+                                unity, attended workshops and classes to further my professional skills,
+                                developed and implemented a well-rounded and level appropriate
+                                curriculum.
+                            </td>
+                            <td>January 2015 - January 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Junior Marketing Assistant, Johannesburg</td>
+                            <td>Thuleng Entertainment</td>
+                            <td>Provided marketing analysis and research on the latest trends, assisted in
+                                creation of preseason marketing plans to support department and
+                                divisional strategies, stay updated with the latest marketing concepts and
+                                techniques, assisted with capturing and analyzing social media metrics,
+                                on boarded new customers efficiently by developing database listing,
+                                uploading information, and defining related lists, assisted with
+                                development of event strategies and tactical plans to promote tactical
+                                plans to promote accomplishments of marketing goals, maintained a
+                                complete database of all files, contacts, and project materials, reviewed
+                                historical data and classified information to inform strategies campaign
+                                development, introduced scheduled targeted email marketing programs,
+                                analyzed past marketing initiatives and revamped the company's
+                                marketing efforts to keep readers and attract new ones.
+                            </td>
+                            <td>July 2014 - October 2014</td>
+                        </tr>
+                        <tr>
+                            <td>Volunteering News Writer</td>
+                            <td>Independent Newspapers, Johannesburg</td>
+                            <td>Covering news content for print and online media, researching and
+                                investigating newsworthy topics and attending events to gather more
+                                information from different sources. remained up-to-date on the latest
+                                industry news and trends, remained knowledgeable about current news in
+                                the country.
+                            </td>
+                            <td>February 2014 - April 2014</td>
+                        </tr>
+                        <tr>
+                            <td>Volunteering News Correspondent</td>
+                            <td>Jozi FM 108.5FM Community Radio Station</td>
+                            <td>Presented news by researching, developing and covering field news
+                                events, disseminated news content through broadcasting media channels
+                                for better engagement with audiences and faster reporting, and remained
+                                up-to-date on the latest industry news and trends.
+                            </td>
+                            <td>January 2013 - February 2013</td>
+                        </tr>
+                        <tr>
+                            <td>Credit Associate</td>
+                            <td>Edgars</td>
+                            <td>Till operation, Switchboard operation, In-store information announcing,
+                                Monitoring hourly and monthly financial targets, opening and closing
+                                in-store credit cards, managing and resolving credit disputes, issuing
+                                cards to customers, registering gifts onto the system, administering
+                                returns and exchange items, attending daily meetings, overseeing the
+                                manager’s diary, adhered to all store policies, rules, and regulations,
+                                handled all merchandise with care and packed customer bags neatly,
+                                settled customer disputes in a professional and pleasant manner,
+                                prevented long waits by quickly and carefully ringing up items, adding to
+                                the hassle-free experience of the customer, answered phones, relayed
+                                important messages, and served as a general liaison between the florist
+                                and customers, took on extra shifts based on the needs of the store,
+                                remained punctual and professional at all times, brought forth the ability
+                                to multitask and prioritize, brought forth a customer-centric attitude,
+                                focused on being punctual, hardworking, and reliable, performed a
+                                variety of administrative duties, including answering phones, taking and
+                                delivering messages, writing memos, making copies, faxing documents,
+                                and greeting visitors, served as a friendly and helpful first point of contact
+                                in the front office, brought forth an energetic and enthusiastic attitude,
+                                maintained work logs for office employees, assisted employees and
+                                visitors with tasks as needed, remained flexible, adaptable, and punctual,
+                                served as an assistant to all administrative personnel and acted as a first
+                                point of contact for visitors and customers, reported to Operations
+                                Manager and assisted shop and office personnel, and worked to ensure
+                                quality service and addressed and resolved all customer issues, brought
+                                forth innovative ideas about organizing systems,and problem solved for
+                                each department to maintain timely completion of parts and meet strict
+                                deadlines.
+                            </td>
+                        </tr>
+                    </table>    
+                </li>              
+                <li><b>My Skills</b></li>
+                <li><b>My Education</b>
+                    <table>
+                        <tr>
+                            <th>Institution</th>
+                            <th>Qualification</th>
+                            <th>Discription</th>
+                            <th>Year Completed</th>
+                        </tr>
+                        <tr>
+                            <td>Belivers Care Society</td>
+                            <td>Comptia A+</td>
+                            <td>Hardware, Operating System, Networking, Mobile Devices,
+                                Troubleshoot, Virtualization and Cloud Computing, 
+                                Software Troubleshooting, Security, Operational Procedures 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cisco Networking Academy</td>
+                            <td>Cisco IT Essentials:PC Hardware and Software</td>
+                            <td>Cisco Introduction to Computers (Hardware and Software), NDG Linux
+                                Essentials, Introductions to Internet of Things, Networking Essentials,
+                                Cisco Introduction to Cloud Computing , Cisco Introduction to Cyber Security,
+                                Introduction to Python.
+                            </td>
+                            <td>February 2022 - July 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Damelin College</td>
+                            <td>Advance Certificate in Journalism</td>
+                            <td>(Year 2) - Politics for Journalism, Writing for Specialist Publication,
+                            Features for Print, News Journalism for Print, Radio Journalism, Career
+                            Development, Production Management, Photojournalism.
+                            (Year 1) - Journalism Studies, Law for Journalists, Contextual Studies,
+                            Media Industries, Media Project, Page Design and Layout for Newspapers
+                            and Magazines, Research Techniques, Literacy Skills 1st Language
+                            (English), Literacy Skills 2nd Language (IsiZulu), Mathematical Literacy.
+                            </td>
+                            <td>January 2010 - December 2011</td>
+                        </tr>
+                        <tr>
+                            <td>Luton Business and Computing College</td>
+                            <td>Cetificate in Information Technology:End-user Computing</td>
+                            <td>Office Practice, Business Communication, Information Technology
+                                Applications (1), Information Technology Applications (2), Introduction
+                                to the world of Computers, Introduction to Business.
+                            </td>
+                            <td>July 2009 - Dec 2009</td>
+                        </tr>
+                        <tr>
+                            <td>Lenz Public School</td>
+                            <td>Grade 12, Senior Certificate</td>
+                            <td>English 1st Language, Afrikaans 2nd Language, Mathematics, Physical
+                                Science, Biology, Geography.
+                            </td>
+                            <td>January 2007 - December 2007</td>
+                        </tr>
+                    </table>
+                </li>
+                <li><b>My Certification</b>
+                    <table>
+                    <tr>
+                        <th>Institutuion</th>
+                        <th>Certificate</th>
+                        <th>Month and Year Completed</th>
+                    </tr>
+                    <tr>
+                        <td>Cisco Netwoking Academy</td>
+                        <td>Introduction to Internet of Things</td>
+                        <td>June 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Cisco Networking Academy</td>
+                        <td>Get Connected Certificate</td>
+                        <td>June 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Reflection Development Institution</td>
+                        <td>Occupational Health and Safety Induction</td>
+                        <td>March 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Sowing Seeds</td>
+                        <td>Conduct Moderation of Outcome Based Assessments NQF 6</td>
+                        <td>August 2018</td>
+                    </tr>
+                    <tr>
+                        <td>Reflection Development Institution</td>
+                        <td>Conduct Outcomes-Based Assessment NQF Level5</td>
+                        <td>August 2017</td>
+                    </tr>
+                    <tr>
+                        <td>Benchmark Assessment Agency</td>
+                        <td>Invigilator Training Programme NQF Level1</td>
+                        <td>September 2016</td>
+                    </tr>
+                </tr>
+                    </table>
+                </li>
+                <li><b>My Projects</b></li>
+            </ul>
+        </main>     
+        </section>
+        <!--------contact---->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="center">
+                    <h3>Let's talk about everything</h3>
+                    <h1>Need any assistance?. Don't hasitate, just Contact Me.</h1>
+            <ul>
+              <li><b>Contact Number: (+27)630808051<b></li>
+              <li><b>Email Address: ramoroka.neo@gmail.com</b></li>
+            </ul>
 
-        <!---This is my footer and it will encompass all the quick links on my website.-->
-        <footer>
-            <table style="width: 100%; height:100px; background-color: lightgrey;">
-                <tr>
-                    <td style="padding-left: 20vh;"><h1><b>This is my address:</b></h1></td>
-                    <td><h2><b>Richard Street, Naturena, Johannesburg South, South Africa.</b></h2></td>
-
-                    <div class="google-map">
-                        <td colspan="2" style="padding-left: 20vh;" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.2077212375193!2d27.951205100000003!3d-26.287365299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95086b6ad9d96f%3A0x7cdf72b6ae0c2aff!2sRichard%20St%2C%20Naturena%2C%20Johannesburg%20South%2C%202095!5e0!3m2!1sen!2sza!4v1676556723203!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></colspan></iframe></td>
+            <div class="container">
+                <form action="action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">First Name</label>
                     </div>
-                </tr>
-                <tr>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="Province" name="Province">
+                        <option value="gauteng">Gauteng</option>
+                        <option value="north-west">North-West</option>
+                        <option value="northern cape">Northern</option>
+                        <option value="western cape">Western Cape</option>
+                        <option value="estern cape">Estern Cape</option>
+                        <option value="free state">Free State</option>
+                        <option value="kwa-zulu-natal">Kwa-Zulu-Natal</option>
+                        <option value="mpumalanga">Mpumalanga</option>
+                        <option value="limpopo">Limpopo</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>
+              
+        </main>
+                    <p>Don't like forms? Send me an email.</p>
+                </div>
 
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div class="action">
+                    <form>
+                        <input type="email" name="email" placeholder="Enter Your email" required>
+                        <input type="submit" name="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
 
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                </tr>
-            </table>    
-        </footer>
-</body>
+        <!--------footer---->
+       <!---This is my footer and it will encompass all the quick links on my website.-->
+       <footer>
+        <table style="width: 100%; height:100px; background-color: lightgrey;">
+            <tr>
+                <td style="padding-left: 20vh;"><h1><b>This is my address:</b></h1></td>
+                <td><h2><b>Richard Street, Naturena, Johannesburg South, South Africa.</b></h2></td>
+                <div class="google-map">
+                <td colspan="2" style="padding-left: 20vh;" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.2077212375193!2d27.951205100000003!3d-26.287365299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95086b6ad9d96f%3A0x7cdf72b6ae0c2aff!2sRichard%20St%2C%20Naturena%2C%20Johannesburg%20South%2C%202095!5e0!3m2!1sen!2sza!4v1676556723203!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></colspan></iframe></td>
+                </div>
+
+                <div class="ends">
+                    <p>Made with love by Neo Ramoroka</p>
+                </div>
+    
+                <script src="https://unpkg.com/scrollreveal"></script>
+    
+            </tr>
+        </table>  
+     </footer>
+        <!--------Link to js---->
+        <script type="text/javascript" src="js/script.js"></script>
+     </body>
+    <footer></footer>
 </html>
